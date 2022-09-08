@@ -1,0 +1,481 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+
+
+/* ------- header --------  */
+header {
+    background-image: url(../image/bg-1.webp);
+}
+
+.block-navbar {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0;
+}
+
+.logo {
+    width: 20%;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    
+    margin-bottom: 0;
+}
+
+.logo span {
+  display: flex;
+  justify-content: left;
+
+  color: #fff;
+}
+
+.logo span i {
+    margin-right: 5px;
+    color: #fff;
+}
+
+.navbar {
+    width: 60%;
+
+    text-transform: uppercase !important;
+    
+}
+
+.navbar .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.navbar-collapse {
+    justify-content: center;
+}
+
+.navbar-collapse .navbar-nav {
+    width: 95%;
+    display: flex !important;
+    justify-content: space-evenly !important;
+}
+
+.nav-socical {
+    display: flex !important;
+    justify-content: space-between;
+
+    width: 20%;
+    color: #fff;
+    padding: 0 20px;
+
+    border-left: 1px solid gray;
+}
+
+.fixed-top {
+    position: absolute !important;
+    top: 85px;
+    left: -10px;
+
+    height: 60px;
+
+    padding: 0;
+}
+
+.fixed-top .menu {
+    height: 100%;
+    /* width: 1100px; */
+    
+    display: flex;
+    justify-content: right;
+    align-items: center;
+
+    background: rgb(76, 76, 76) !important;
+}
+
+.navbar-toggler {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.25 0.5;
+    margin-right: 10px;
+    
+
+    text-transform: uppercase;
+    background-color: rgb(34, 34, 34);
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.navbar-icon {
+    margin-left: 6px;
+    padding: 5px;
+    font-size: 1.2rem;
+    
+
+}
+
+.bg-nav-fixed {
+    background: rgb(76, 76, 76) !important;
+}
+
+.fixed-top .container.collapse.show {
+    padding: 0;
+    /* width: 1100px; */
+}
+
+.fixed-top .navbar-nav {
+    padding-left: 15px ;
+    padding-bottom: 10px;
+}
+
+.fixed-top .nav-item .nav-link {
+    color: #fff !important;
+}
+
+.carousel {
+    height: 595px;
+}
+
+.carousel-item {
+    height: 630px;
+    padding-top: 150px;
+    
+    transition: all ease-in-out 0.8s;
+}
+
+.carousel-item.active {
+    padding-top: 0;
+    padding-bottom: 50px;
+}
+
+.carousel-title {
+    color: #fff !important;
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding-left: 20%;
+
+}
+
+.carousel-title span {
+
+
+    color: #ffffff;
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+
+    transition: all, 0.3s;
+}
+
+.carousel-title h2 {
+    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 70px;
+    text-transform: uppercase;
+    margin-bottom: 38px;
+    font-weight: bold;
+    font-family: "Play", sans-serif;
+
+    transition: all, 0.3s;
+}
+
+.carousel-title a {
+    display: inline-block;
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    /* font-family: "Play", sans-serif; */
+    font-weight: bold;
+    padding: 14px 32px 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 49%;
+    text-decoration: none;
+
+    position: relative;
+
+    transition: all, 0.3s;
+
+}
+
+
+
+.carousel-title a::before {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid #00bfe7;
+    border-top: 2px solid #00bfe7;
+    content: "";
+    z-index: 105;
+
+    transition: all linear 0.3s;
+}
+
+.carousel-title a:hover::before {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-title a::after {
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid #00bfe7;
+    border-bottom: 2px solid #00bfe7;
+    content: "";
+    z-index: 100;
+
+    transition: all linear 0.3s;
+
+}
+
+.carousel-title a:hover::after {
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-indicators {
+    margin-left: 20% !important;
+
+    justify-content: left;
+    bottom: 20px;
+}
+
+.carousel-indicators li {
+    text-indent: 0;
+    height: 100%;
+    background-color: transparent !important;
+    color: #fff;
+    opacity: 0.6;
+    font-family: "Play", sans-serif;
+
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    /* font-weight: 500; */
+    border-bottom: 1px solid #fff;
+    text-align: center;
+    margin-right: 10px;
+    width: auto;
+    
+}
+
+/* --------- section ---------  */
+
+section {
+    
+}
+
+/* ------- service --------  */
+
+.service {
+    height: 695px;
+    background: #100028;
+    padding-bottom: 60px;
+    padding-top: 110px;
+    
+    color: #fff;
+}
+
+.block-service {
+    display: flex;
+
+    padding: 0;
+
+}
+
+.service-title {
+    width: 60%;
+    margin-right: 30px;
+}
+
+.service-title span {
+    color: #ffffff;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.service-title h2 {
+    color: #ffffff;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: "Play", sans-serif;
+
+    position: relative;
+    padding-bottom: 25px;
+    font-size: 2.1rem;
+    letter-spacing: 3px;
+
+}
+
+.service-title h2::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 70px;
+    background: #00bfe7;
+    content: "";
+}
+
+.service-title p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #adadad;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 45px 0 45px 0;
+   
+    
+}
+
+
+.service-title .service-button{
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    /* font-family: "Play", sans-serif; */
+    font-weight: bold;
+    padding: 14px 32px 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* width: 49%; */
+    text-decoration: none;
+
+  
+
+    transition: all, 0.3s;
+    position: relative;
+}
+
+
+
+.service-title .service-button::before {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid #00bfe7;
+    border-top: 2px solid #00bfe7;
+    content: "";
+    z-index: 105;
+
+    transition: all linear 0.3s;
+}
+
+.service-title .service-button:hover::before {
+    height: 100%;
+    width: 100%;
+}
+
+.service-title .service-button::after {
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid #00bfe7;
+    border-bottom: 2px solid #00bfe7;
+    content: "";
+    z-index: 100;
+
+    transition: all linear 0.3s;
+
+}
+
+.service-title .service-button:hover::after {
+    height: 100%;
+    width: 100%;
+}
+
+.service-content {
+
+}
+
+.service-content-top {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.service-content-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 60px;
+}
+
+.service-clone {
+    width: 45%;
+}
+
+.service-clone-img {
+    position: relative;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    margin-left: 10px;
+}
+
+.service-clone-img::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #00bfe7;
+    content: "";
+    transition: all, 0.5s;
+}
+
+.service-clone-img:hover::before {
+    transform: rotate(45deg);
+}
+
+.service-clone-content h4 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 26px;
+    margin-bottom: 18px;
+    font-family: "Play", sans-serif;
+}
+
+.service-clone-content p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    color: #adadad;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+    
+}
