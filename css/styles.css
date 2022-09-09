@@ -479,3 +479,400 @@ section {
     margin: 0 0 15px 0;
     
 }
+
+/* ------- portfolio --------  */
+
+.portfolio {
+  background-color: #100028;
+  padding-top: 50px;
+}
+
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+
+
+    
+}
+
+.grid-clone{
+    width: 100%;
+    height: 100% !important;
+}
+
+.grid-clone img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.grid-clone:first-child {
+    grid-column: 1/3;
+    grid-template-rows: 1/2 ;
+    
+  
+}
+
+.grid-clone:nth-child(6) {
+    grid-column: 3/5;
+}
+
+.grid-clone:last-child {
+    grid-column: 5/8 ;
+    grid-row: 1/3;
+    
+
+}
+
+/* -------- skills -------  */
+
+.skills {
+    color: #fff;
+    background-color: #100028;
+    height: 840px;
+    overflow: hidden;
+    padding-top: 450px;
+    padding-bottom: 500px;
+
+}
+
+.skills-container {
+
+}
+
+.block-skill {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.skill-item {
+    width: 255px !important;
+    height: 255px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 25%;
+    background: #1a083d;
+
+    transform: rotate(45deg);
+    
+    position: relative;
+}
+
+.skill-item::before {
+    position: absolute;
+    height: 658px;
+    width: 658px;
+    border-left: 1px solid #333333;
+    border-top: 1px solid #333333;
+    content: "";
+    z-index: -1;
+}
+
+.skill-item:first-child::before {
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    height: 658px;
+    width: 658px;
+    border-left: 1px solid #333333;
+    border-top: 1px solid #333333;
+    content: "";
+    z-index: -1;
+}   
+
+.skill-item:nth-child(2) {
+    margin-top: -185px;
+}
+
+.skill-item:nth-child(2)::before {
+    left: -326px;
+    bottom: -78px;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: none;
+    border-top: none;
+}
+
+.skill-item:nth-child(3)::before {
+    left: -77px;
+    bottom: -326px;
+    
+}
+
+.skill-item:nth-child(4) {
+    margin-top: -185px;
+}
+
+.skill-item:nth-child(4)::before {
+    left: -402px;
+    bottom: -404px;
+    border-right: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    border-left: none;
+    border-top: none;
+}
+
+.skill-content {
+    text-align: center;
+    width: 100%;
+    transform: rotate(-45deg);
+
+}
+
+.skill-content h2 {
+    font-size: 3.5rem;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 6px;
+    margin-top: 18px;
+    font-family: "Josefin Sans", sans-serif;
+
+}
+
+.skill-content p {
+    font-size: 16px;
+    font-family: "Josefin Sans", sans-serif;
+    /* color: #adadad; */
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0 0 15px 0;
+}
+
+/* ----- photo --------  */
+.photo {
+    background-image: url(../image/ct10.jpg);
+    height: 756px;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.photo-title {
+
+}
+
+.photo-title span {
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.photo-title h2 {
+    color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 25px;
+    padding-top: 10px;
+
+    font-size: 2rem;
+
+    font-family: "Josefin Sans", sans-serif;
+}
+
+.photo-title h2::before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 5px;
+    width: 70px;
+    background: #00bfe7;
+    content: "";
+
+}
+
+.photo-img {
+    display: flex;
+    
+}
+
+.img-clone {
+    width: 100%;
+    height: 100%;
+
+    margin: 20px 0;
+    
+}
+
+.img-clone img {
+    object-fit: cover;
+    width: 100%;
+    height: 416px;
+}
+
+.img-clone:first-child img {
+    margin-top: 30px;
+}
+
+.img-clone:nth-child(3) img {
+    margin-top: -70px !important;
+}
+
+.img-clone:nth-child(2) img {
+    margin-top: -20px !important;
+}
+
+.img-clone:last-child img {
+    margin-top: -120px !important;
+}
+
+
+.photo-button-block {
+    text-align: right;
+    margin-top: -70px;
+
+}
+
+.photo-button{
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    /* font-family: "Play", sans-serif; */
+    font-weight: bold;
+    padding: 14px 32px 12px;
+    color: #ffffff;
+    text-transform: uppercase;
+    /* width: 49%; */
+    text-decoration: none;
+
+
+  
+
+    transition: all, 0.3s;
+    position: relative;
+}
+
+.photo-button:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.photo-button::before {
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-left: 2px solid #00bfe7;
+    border-top: 2px solid #00bfe7;
+    content: "";
+    z-index: 105;
+
+    transition: all linear 0.3s;
+}
+
+.photo-button:hover::before {
+    height: 100%;
+    width: 100%;
+}
+
+.photo-button::after {
+    position: absolute !important;
+    right: 0;
+    bottom: 0;
+    height: 30px;
+    width: 30px;
+    border-right: 2px solid #00bfe7;
+    border-bottom: 2px solid #00bfe7;
+    content: "";
+    z-index: 100;
+
+    transition: all linear 0.3s;
+
+}
+
+.photo-button:hover::after {
+    height: 100%;
+    width: 100%;
+}
+
+/* ----------- footer ------------  */
+
+/* ------ contact ------  */
+.contact {
+    background-color: #100028;
+    color: #fff;
+}
+
+.block-contact {
+   width: 100%;
+}
+
+.contact-socical {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact-socical-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.contact-socical-title i {
+    
+}
+
+.contact-socical {
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+
+
+   width: 100%;
+   height: 100px;
+  
+
+
+}
+
+.contact-socical-content {
+    display: flex;
+    justify-content: space-between;
+
+    width: 20% ;
+    
+}
+
+.contact-socical-clone {
+
+}
+
+.contact-socical-clone a {
+    display: inline-block;
+    font-size: 15px;
+    color: #ffffff;
+    height: 40px;
+    width: 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    line-height: 44px;
+    text-align: center;
+    margin-right: 6px;
+    text-decoration: none;
+}
+
+.contact-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 80px;
+}
+
+.contact-copyright a {
+    color: #00bfe7;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
