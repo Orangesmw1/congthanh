@@ -56,10 +56,30 @@ header {
     
 }
 
+
+
 .navbar .nav-link {
     color: #fff;
     font-size: 1.2rem;
     font-weight: 500;
+    padding: 0 !important;
+    margin: 0;
+
+    position: relative;
+    /* transition: all linear 0.3s; */
+}
+
+.navbar .nav-link:hover {
+    border-bottom: 2px solid #00bfe7;
+    cursor: pointer;
+
+
+}
+
+
+
+header .block-navbar .nav-item.active .nav-link {
+    border-bottom: 2px solid #00bfe7;
 }
 
 .navbar-collapse {
@@ -81,6 +101,11 @@ header {
     padding: 0 20px;
 
     border-left: 1px solid gray;
+}
+
+.block-navbar .socical-clone:hover i {
+    color: #00bfe7;
+    cursor: pointer;
 }
 
 .fixed-top {
